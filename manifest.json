@@ -1,0 +1,17 @@
+{
+  "name": "cdrom-extension-cdrom-eject",
+  "version": "0.1",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "plugins": [
+    {
+      "path": "plugin/libcdrom_eject_plugin.so"
+    }
+  ]
+}
